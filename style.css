@@ -43,14 +43,15 @@ header section {
 }
 
 .menu-header {
+    width: 20vw;
+
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
 .menu-header li{
-    margin-right: 2rem;
     font-size: 1.4rem;
 }
 
@@ -65,6 +66,9 @@ header section {
     border-radius: 10px;
     color: white;
     font-size: 1.4rem;
+    cursor: pointer;
+
+    border: none;
 }
 
 .btn-login-header:hover {
@@ -139,6 +143,9 @@ main {
     color: white;
     font-size: 1.4rem;
     text-decoration: none;
+
+    border: none;
+    cursor: pointer;
 }
 
 .btn-solicitar-orcamento:hover {
@@ -375,3 +382,169 @@ footer section p {
     text-align: left;
     justify-content: center;
 }
+
+
+/* mobile responsive */
+
+@media(max-width: 400px) {
+
+    header {
+        width: 100vw;
+        height: 25vh;
+        
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        padding: 0;
+    }
+
+    .btn-login-header {
+        display: none;
+    }
+
+    .menu-header {
+        width: 80vw;
+    }
+
+    .menu-header li{
+        font-size: 1.2rem;
+    }
+
+    /*main introdução*/
+
+    .introdução {
+        width: 100vw;
+        height: 70vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .introdução figure {
+        width: 100vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: 1rem;
+    }
+    
+    .introdução section {
+        width: 100vw;
+        text-align: center;
+    }
+    
+    .introdução figure img {
+        width: 60vw;
+        margin-right: 0;    
+    }
+    
+    .introdução section p {
+       font-weight: 600;
+       font-size: 1rem;
+    }
+    
+    .introdução section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .introdução .btn-solicitar-orcamento {
+        font-size: 1rem;
+    }
+
+
+    /* section itens */
+
+    .itens {
+        border: 1px solid red;
+        width: 100vw;
+        height: 120vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .itens img {
+        width: 35vw;
+    }
+    
+    .lista {
+        border: 1px solid red;
+        width: 60vw;
+        margin-right: 15rem;
+
+        display: flex;
+        flex-direction: column;
+
+        text-align: left;
+    }
+    
+    .lista h4 {
+
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin: 0 0 2rem 0;
+    }
+    
+    .lista h4 i {
+        margin-right: 1rem;
+        color: rgb(197, 0, 0)
+    }
+
+    .form-tel {
+        border: 1px solid red;
+        width: 100vw;
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form-tel h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: .8rem;
+    }
+    
+    .form-tel form input {
+        width: 17vw;
+        height: 8vh;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background: rgb(217, 217, 217);
+        padding: 1rem;
+        margin-right: 0;
+    }
+    
+    .form-tel form input::placeholder{
+        font-size: 1.1rem;
+    }
+    
+    .form-tel form button {
+        width: 17vw;
+        height: 8vh;
+        border-radius: 10px;
+        background: rgb(197, 0, 0);
+        outline: none;
+        border: none;
+    
+        cursor: pointer;
+    
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    .form-tel form button:hover {
+        transition: .3s ease-in-out;
+        background: rgb(227, 0, 0);
+    }
+    
+}   
